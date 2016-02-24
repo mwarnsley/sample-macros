@@ -1,1 +1,16 @@
-ECHO is on.
+#calculator-container{
+    text-align: center;
+}
+input{
+    height: 25px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+select{
+    margin-bottom: 15px;
+}
