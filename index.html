@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculate Macros</title>
-    </head>
-    <body>
+<head>
+    <title>Calculate Macros</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <div id="calculator-container">
-        <div id="inputs">
-            <h1>Formula for BMR (Basal Metabolic Rate)</h1>
-            <input class="height" type="text" name="height">
-            <input class="weight" type="text" name="weight">
-            <input class="age" type="text" name="age">
-        </div>
+<div id="calculator-container">
+    <div id="inputs">
+        <h1>Formula for BMR (Basal Metabolic Rate)</h1>
+        <label for="feet">Enter Your Height</label>
+        <input class="feet" type="text" name="feet">ft
+        <input class="inches" type="text" name="inches">in<br>
+        <label for="weight">Enter Your Weight</label>
+        <input class="weight" type="text" name="weight"><br>
+        <label for="age">Enter Your Age</label>
+        <input class="age" type="text" name="age">
+        <label>Enter Your Gender</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <label>Results</label>
+        <textarea id="results" readonly></textarea><br>
+        <a class="btn btn-default btn-success btn-large calc">Calculate</a>
+        <a class="btn btn-default btn-danger btn-large reset">Reset</a>
     </div>
+</div>
 
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
 </html>
